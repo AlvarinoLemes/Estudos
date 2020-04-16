@@ -7,19 +7,22 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" name="nome" />
-        <button class="botao">Adicionar</button>
+            <input id="oi">
     </div>
 
     <script>
-        var inputElement = document.querySelector('input[name=nome]')
-        var btnElement = document.querySelector('button.botao');
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'http://google.com/');
+        linkElement.setAttribute('title', 'Site de pesquisa');
 
-        btnElement.onclick = function() {
-            var text = inputElement.value;
-            alert(text);
-        }
+        var textElement = document.createTextNode('Acessar a página do Google!');
+        linkElement.appendChild(textElement);
 
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        var removeElement = document.querySelector('#oi');
+        containerElement.removeChild(removeElement);
     </script>
 </body>
 </html>
