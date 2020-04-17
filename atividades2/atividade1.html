@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio Modulo 2</title>
+</head>
+<body>
+
+    <button id="botao">+ Cor</button>
+    <div id="box"></div>
+
+    <script>
+
+        var btnElement = document.getElementById('botao');
+        var boxElement = document.getElementById('box');
+
+    btnElement.onclick = function() {
+        var adddiv = document.createElement('div');
+        adddiv.style.width = '100px';
+        adddiv.style.height = '100px';
+        adddiv.style.backgroundColor = 'red';
+
+        boxElement.appendChild(adddiv);
+    }
+</script>
+</body>
+</html>
