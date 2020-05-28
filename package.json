@@ -1,8 +1,8 @@
 {
-  "name": "Study---JS",
+  "name": "ESTUDOS",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/AlvarinoLemes/Study---JS.git",
+  "repository": "https://github.com/AlvarinoLemes/Estudos.git",
   "author": "AlvarinoLemes <alvarinoguilherme@hotmail.com>",
   "license": "MIT",
   "dependencies": {
